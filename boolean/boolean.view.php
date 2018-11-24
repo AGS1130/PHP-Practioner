@@ -13,9 +13,9 @@
         <?php foreach($tasks as $task => $status) : ?>
         <li>
             <strong><?= $task . ':'; ?></strong>
-            <?php 
+            <?php
             $typeOf = gettype($status);
-            
+
             if($typeOf === 'boolean') {
                 echo $status ? 'Complete' : 'Incomplete';
             } else {
